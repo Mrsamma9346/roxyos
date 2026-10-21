@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <filter id="orbGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <radialGradient id="scrySphere" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#7dd3fc"/>
+      <stop offset="60%" stop-color="#0284c7"/>
+      <stop offset="90%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </radialGradient>
+    <linearGradient id="silverMount" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ornate Silver Pedestal / Claws -->
+  <path d="M 40 108 C 40 92 52 86 64 86 C 76 86 88 92 88 108 L 96 114 L 32 114 Z" fill="#0f172a" stroke="#64748b" stroke-width="2"/>
+  <path d="M 42 109 C 42 94 53 88 64 88 C 75 88 86 94 86 109 L 92 112 L 36 112 Z" fill="url(#silverMount)"/>
+
+  <!-- Arcane Claws holding the crystal -->
+  <path d="M 24 70 C 22 52 30 38 42 30 C 40 38 34 52 38 72 Z" fill="url(#silverMount)" stroke="#0f172a" stroke-width="1.5"/>
+  <path d="M 104 70 C 106 52 98 38 86 30 C 88 38 94 52 90 72 Z" fill="url(#silverMount)" stroke="#0f172a" stroke-width="1.5"/>
+
+  <!-- Mystic Water Crystal Ball -->
+  <circle cx="64" cy="58" r="42" fill="#0369a1" opacity="0.3" filter="url(#orbGlow)"/>
+  <circle cx="64" cy="58" r="38" fill="url(#scrySphere)"/>
+
+  <!-- Internal Clairvoyance Eye / Water Aperture -->
+  <circle cx="64" cy="58" r="16" fill="none" stroke="#e0f2fe" stroke-width="2" stroke-dasharray="6,3" filter="url(#orbGlow)"/>
+  <circle cx="64" cy="58" r="8" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="64" cy="58" r="4" fill="#ffffff"/>
+
+  <!-- Specular Highlights -->
+  <ellipse cx="50" cy="42" rx="10" ry="5" transform="rotate(-30 50 42)" fill="#ffffff" opacity="0.85"/>
+</svg>

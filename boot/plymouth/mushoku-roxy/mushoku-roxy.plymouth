@@ -1,0 +1,47 @@
+[Plymouth Theme]
+Name=Roxy Migurdia (Mushoku Tensei)
+Description=Anime theme featuring Roxy Migurdia with a rotating water magic circle and bilingual crest
+ModuleName=two-step
+
+[two-step]
+Font=Adwaita Sans 12
+TitleFont=Adwaita Sans Bold 30
+ImageDir=/usr/share/plymouth/themes/mushoku-roxy
+HorizontalAlignment=.5
+VerticalAlignment=.45
+WatermarkHorizontalAlignment=.5
+WatermarkVerticalAlignment=.84
+Transition=none
+TransitionDuration=0.0
+BackgroundStartColor=0x000000
+BackgroundEndColor=0x000000
+ProgressBarBackgroundColor=0x0f172a
+ProgressBarForegroundColor=0x38bdf8
+DialogClearsFirmwareBackground=true
+MessageBelowAnimation=true
+
+[boot-up]
+UseEndAnimation=false
+UseFirmwareBackground=false
+
+[shutdown]
+UseEndAnimation=false
+UseFirmwareBackground=false
+
+[reboot]
+UseEndAnimation=false
+UseFirmwareBackground=false
+
+[updates]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Installing Updates...
+SubTitle=Do not turn off your computer
+
+[system-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Upgrading System...
+SubTitle=Do not turn off your computer

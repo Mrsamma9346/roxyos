@@ -1,0 +1,12 @@
+{
+  "name": "Mouse Tail",
+  "description": "A Gnome extension to draw the mouse tail on the screen",
+  "gettext-domain": "mouse-tail",
+  "settings-schema": "org.gnome.shell.extensions.mouse-tail",
+  "uuid": "mouse-tail@lanesun.anlbrain.com",
+  "shell-version": ["47", "48", "49", "50", "51"],
+  "url": "https://github.com/LaneSun/mouse-tail",
+  "donations": {
+    "kofi": "lanesun45182"
+  }
+}

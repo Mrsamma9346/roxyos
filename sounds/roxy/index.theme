@@ -1,0 +1,7 @@
+[Sound Theme]
+Name=Roxy (Mushoku Tensei)
+Comment=Celestial water-magic sound theme inspired by Roxy Migurdia
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo

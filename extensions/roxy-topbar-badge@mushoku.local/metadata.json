@@ -1,0 +1,6 @@
+{
+  "name": "RoxyOS Top Bar Badge",
+  "description": "Replaces Activities with a sleek RoxyOS badge with a glowing cyan dot",
+  "uuid": "roxy-topbar-badge@mushoku.local",
+  "shell-version": ["47", "48", "49", "50", "51"]
+}

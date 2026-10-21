@@ -1,0 +1,61 @@
+/* Dynamic Accent Colors for Light & Dark */
+:root {
+  --accent-color: #0284c7;
+  --accent-bg-color: #0284c7;
+  --accent-fg-color: #ffffff;
+  --standalone-color-ok: #0284c7;
+}
+
+/* Global Switches, Radios & Sliders styled with Accent */
+switch:checked {
+  background-color: var(--accent-bg-color);
+  color: var(--accent-fg-color);
+}
+
+scale highlight {
+  background-color: var(--accent-bg-color);
+}
+
+/* ========================================================
+   DARK MODE ONLY STYLING
+   ======================================================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #38bdf8;
+    --accent-bg-color: #38bdf8;
+    --accent-fg-color: #0f172a;
+    --standalone-color-ok: #38bdf8;
+  }
+
+  /* RoxyOS Water-Magic Dark Window Styling */
+  window.background {
+    background-color: #0b1329;
+  }
+
+  headerbar {
+    background-color: #0f172a;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+  }
+
+  navigation-sidebar > list > row:selected {
+    background-color: rgba(56, 189, 248, 0.25);
+    color: #38bdf8;
+    border-left: 3px solid #38bdf8;
+  }
+}
+
+/* ========================================================
+   LIGHT MODE STYLING
+   ======================================================== */
+@media (prefers-color-scheme: light) {
+  /* Keep native light backgrounds - no dark blue forced on windows */
+  headerbar {
+    border-bottom: 1px solid rgba(2, 132, 199, 0.2);
+  }
+
+  navigation-sidebar > list > row:selected {
+    background-color: rgba(2, 132, 199, 0.15);
+    color: #0284c7;
+    border-left: 3px solid #0284c7;
+  }
+}

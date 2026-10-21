@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <filter id="tomeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <linearGradient id="leatherCover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="tomeGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Book Pages Thickness -->
+  <path d="M 28 32 L 96 32 C 104 32 108 36 108 42 L 108 108 C 108 114 104 118 96 118 L 28 118 Z" fill="#fef3c7" stroke="#0f172a" stroke-width="2"/>
+  <line x1="102" y1="36" x2="102" y2="114" stroke="#d97706" stroke-width="1"/>
+
+  <!-- Book Leather Cover -->
+  <path d="M 22 22 L 94 22 C 102 22 106 26 106 32 L 106 104 C 106 110 102 114 94 114 L 22 114 Z" 
+        fill="url(#leatherCover)" stroke="url(#tomeGold)" stroke-width="2.5"/>
+
+  <!-- Gold Spine Ribs -->
+  <rect x="20" y="22" width="12" height="92" rx="3" fill="#0f172a" stroke="url(#tomeGold)" stroke-width="1.5"/>
+  <line x1="22" y1="36" x2="30" y2="36" stroke="url(#tomeGold)" stroke-width="2"/>
+  <line x1="22" y1="68" x2="30" y2="68" stroke="url(#tomeGold)" stroke-width="2"/>
+  <line x1="22" y1="100" x2="30" y2="100" stroke="url(#tomeGold)" stroke-width="2"/>
+
+  <!-- Ornate Corner Brackets -->
+  <polygon points="90,24 104,24 104,38" fill="url(#tomeGold)"/>
+  <polygon points="90,112 104,112 104,98" fill="url(#tomeGold)"/>
+
+  <!-- Center Water Crest / Magic Seal -->
+  <circle cx="68" cy="68" r="22" fill="#0f172a" stroke="url(#tomeGold)" stroke-width="2"/>
+  <circle cx="68" cy="68" r="18" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6,3" filter="url(#tomeGlow)"/>
+  <!-- Magic Water Droplet Emblem -->
+  <path d="M 68 54 C 68 54 58 66 58 72 C 58 78 62 82 68 82 C 74 82 78 78 78 72 C 78 66 68 54 68 54 Z" fill="#38bdf8" filter="url(#tomeGlow)"/>
+  <circle cx="66" cy="70" r="2.5" fill="#ffffff"/>
+
+  <!-- Glowing Bookmark Ribbon -->
+  <path d="M 52 114 L 52 126 L 58 120 L 64 126 L 64 114 Z" fill="#38bdf8" stroke="#0284c7" stroke-width="1"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <filter id="lensGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <linearGradient id="goldRim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+    <radialGradient id="waterLens" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#bae6fd"/>
+      <stop offset="75%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ornate Golden Wand Handle -->
+  <line x1="78" y1="78" x2="114" y2="114" stroke="#0f172a" stroke-width="12" stroke-linecap="round"/>
+  <line x1="78" y1="78" x2="114" y2="114" stroke="url(#goldRim)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="114" cy="114" r="7" fill="#0284c7" stroke="url(#goldRim)" stroke-width="2"/>
+
+  <!-- Outer Golden Lens Rim -->
+  <circle cx="52" cy="52" r="38" fill="#0f172a" stroke="url(#goldRim)" stroke-width="3"/>
+  <circle cx="52" cy="52" r="35" fill="none" stroke="url(#goldRim)" stroke-width="4"/>
+
+  <!-- Water Lens Glass -->
+  <circle cx="52" cy="52" r="31" fill="url(#waterLens)" opacity="0.9"/>
+
+  <!-- Water Magic Circle revealed inside lens -->
+  <circle cx="52" cy="52" r="20" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="6,3" filter="url(#lensGlow)"/>
+  <polygon points="52,36 66,60 38,60" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.8"/>
+  <polygon points="52,68 66,44 38,44" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.8"/>
+  <circle cx="52" cy="52" r="4" fill="#38bdf8" stroke="#ffffff" stroke-width="1"/>
+
+  <!-- Specular Lens Glint -->
+  <ellipse cx="40" cy="36" rx="8" ry="4" transform="rotate(-35 40 36)" fill="#ffffff" opacity="0.9"/>
+</svg>

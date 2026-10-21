@@ -1,0 +1,13 @@
+[Unit]
+Description=RoxyOS Light/Dark Mode Theme Synchronizer
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/roxy-theme-sync
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <radialGradient id="orbGlow" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="35%" stop-color="#38bdf8"/>
+      <stop offset="70%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </radialGradient>
+  </defs>
+  <!-- Astrological Orb Ring -->
+  <ellipse cx="64" cy="64" rx="52" ry="22" fill="none" stroke="#facc15" stroke-width="2.5" transform="rotate(-25 64 64)" stroke-dasharray="6 3" />
+  
+  <!-- Scrying Water Sphere -->
+  <circle cx="64" cy="64" r="36" fill="url(#orbGlow)" stroke="#bae6fd" stroke-width="1.5" />
+  <path d="M 40 50 Q 64 80 88 54 Q 64 68 40 50 Z" fill="#ffffff" opacity="0.4" />
+  <ellipse cx="52" cy="46" rx="8" ry="4" fill="#ffffff" opacity="0.8" transform="rotate(-30 52 46)" />
+</svg>

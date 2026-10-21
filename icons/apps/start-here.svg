@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="hatDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#473a4b"/>
+      <stop offset="50%" stop-color="#2d2232"/>
+      <stop offset="100%" stop-color="#18121b"/>
+    </linearGradient>
+    <linearGradient id="goldBand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Glow circle -->
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#0ea5e9" stroke-width="1" stroke-dasharray="4 4" opacity="0.6" />
+  
+  <!-- Witch Hat Brim -->
+  <ellipse cx="64" cy="88" rx="46" ry="16" fill="url(#hatDark)" stroke="#18121b" stroke-width="2" />
+  <ellipse cx="64" cy="86" rx="44" ry="14" fill="#3b2d3f" opacity="0.8" />
+  
+  <!-- Hat Cone -->
+  <path d="M 36 86 C 42 50, 48 30, 78 16 C 88 12, 94 18, 86 24 C 74 34, 68 56, 92 86 Z" fill="url(#hatDark)" stroke="#18121b" stroke-width="1.5" />
+  
+  <!-- Golden Hat Band -->
+  <path d="M 38 84 C 52 80, 76 80, 90 84 C 91 87, 89 89, 88 90 C 74 86, 52 86, 40 90 Z" fill="url(#goldBand)" />
+  <rect x="60" y="81" width="8" height="9" rx="2" fill="none" stroke="#fef08a" stroke-width="2" />
+  
+  <!-- Roxy's Water Crystal Charm -->
+  <polygon points="64,68 69,76 64,84 59,76" fill="#38bdf8" filter="url(#cyanGlow)" stroke="#ffffff" stroke-width="0.8" />
+</svg>

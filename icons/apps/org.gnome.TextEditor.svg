@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="scrollGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="60%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+  </defs>
+  <!-- Parchment Scroll -->
+  <path d="M 32 30 C 40 26, 80 26, 92 30 C 96 32, 96 94, 92 96 C 80 100, 40 100, 32 96 C 28 94, 28 32, 32 30 Z" fill="url(#scrollGrad)" stroke="#38bdf8" stroke-width="1.5" />
+  <!-- Scroll Rolls -->
+  <ellipse cx="62" cy="28" rx="30" ry="5" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1" />
+  <ellipse cx="62" cy="98" rx="30" ry="5" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1" />
+  
+  <!-- Magic Text Lines / Runes -->
+  <line x1="42" y1="44" x2="82" y2="44" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="42" y1="54" x2="74" y2="54" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+  <line x1="42" y1="64" x2="80" y2="64" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="42" y1="74" x2="68" y2="74" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Glowing Feather Quill -->
+  <path d="M 96 24 C 92 44, 76 68, 66 82 L 64 88 L 70 86 C 80 74, 94 50, 98 26 Z" fill="#38bdf8" stroke="#ffffff" stroke-width="1" />
+  <line x1="96" y1="26" x2="66" y2="86" stroke="#ffffff" stroke-width="1.5" />
+</svg>
